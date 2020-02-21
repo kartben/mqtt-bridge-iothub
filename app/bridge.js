@@ -46,11 +46,13 @@ client.open(function (err) {
   }
 });
 
-function sendDataToIoTHub(message)
+function sendDataToIoTHub(data)
 {
-  var data = JSON.stringify(message);
-  console.log('Sending device event data:\n' + data);
-  client.sendEvent(new Message(data), printErrorFor('send event'));
+  var msg = new Message(data);
+  msg.contentType = "application/json";
+  msg.contentEncoding = "utf-8";
+  console.log('Sending device event data:', data);
+  client.sendEvent(msg, printErrorFor('send event'));
 }
 
 var mqttClient = mqtt.connect(mqttServer);  

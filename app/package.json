@@ -6,16 +6,16 @@
   "author": "Anton Staykov (astaykov@gmail.com)",
   "license": "MIT",
   "dependencies": {
-    "mqtt":"2.17.0",
-    "azure-iot-device": "1.1.17",
-    "azure-iot-device-amqp": "1.1.17",
-    "azure-iot-device-http": "1.1.17",
-    "azure-iot-device-mqtt": "1.1.17",
-    "es5-shim": "^4.5.9",
-    "lodash": "^4.15.0"
+    "mqtt": "3.0.0",
+    "azure-iot-device": "1.12.2",
+    "azure-iot-device-amqp": "1.11.2",
+    "azure-iot-device-http": "1.11.2",
+    "azure-iot-device-mqtt": "1.11.2",
+    "es5-shim": "^4.5.13",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "jshint": "^2.9.2"
+    "jshint": "^2.11.0"
   },
   "scripts": {
     "lint": "jshint --show-non-errors .",

@@ -1,5 +1,5 @@
 FROM node:alpine
-LABEL maintainer="astaykov@gmail.com"
+LABEL maintainer="kartben@gmail.com"
 
 VOLUME /opt/certs
 
